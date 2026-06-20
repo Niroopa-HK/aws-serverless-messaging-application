@@ -3,16 +3,16 @@ Designed and developed a serverless web application that enables users to send e
 
 Tools: 
 (AWS) 
-• S3 
-• API Gateway 
-• Lambda 
-• Step Functions 
-• SNS 
-• SES 
+- S3 
+- API Gateway 
+- Lambda 
+- Step Functions 
+- SNS 
+- SES 
 (Programming) 
-• Python 
-• JS & Json 
-• Html
+- Python 
+- JS & Json 
+- Html
 
 Process: 
 Step-1: Create Lambda Role 
