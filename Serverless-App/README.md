@@ -1,4 +1,4 @@
-                                          ### AWS Serverless Messaging Application
+                                          # AWS Serverless Messaging Application
 Designed and developed a serverless web application that enables users to send email and SMS notifications using AWS services, including Lambda, API Gateway, Step Functions, Amazon SES, and Amazon SNS. The solution eliminates the need for traditional server management while providing a scalable, cost-effective, and highly available architecture for message delivery and workflow automation.
 
 Tools: 
@@ -49,7 +49,7 @@ Step-3: Create Step Function Workflow
 - Conditional logic (email, SMS, or both) 
 - Invoke appropriate Lambda functions
 
-                                               ## Step Function
+                                               # Step Function
   
   <img width="1917" height="887" alt="Screenshot 2026-06-20 114622" src="https://github.com/user-attachments/assets/0e76c324-23a0-4108-b0da-3bdb83993401" />
 
@@ -81,6 +81,7 @@ Step-6: Upload Website to S3
 <img width="1915" height="888" alt="Screenshot 2026-06-20 115049" src="https://github.com/user-attachments/assets/f738b394-dd23-436b-a56d-af3b8fba2867" />
 
 <img width="1918" height="862" alt="Screenshot 2026-06-20 123411" src="https://github.com/user-attachments/assets/be3de294-99ea-44c6-92c3-9497ce9bdbdf" />
+
 
 OUTPUT: http://serverless-message-app.s3-website.ap-south-1.amazonaws.com 
 
