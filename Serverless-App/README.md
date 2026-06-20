@@ -16,13 +16,13 @@ Tools:
 
 Process: 
 Step-1: Create Lambda Role 
-• Go to IAM > Roles > Create Role 
-• Choose AWS Service > Lambda 
-• Attach Full Access policies for: 
-o SES 
-o SNS 
-o Step Functions 
-• Name and create the role.
+- Go to IAM > Roles > Create Role 
+- Choose AWS Service > Lambda 
+- Attach Full Access policies for: 
+- SES 
+- SNS 
+- Step Functions 
+- Name and create the role.
 
 <img width="1915" height="910" alt="Screenshot 2026-06-20 105642" src="https://github.com/user-attachments/assets/57f3d3cb-f265-4628-805f-6a043da55618" />
 
