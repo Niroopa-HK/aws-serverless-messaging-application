@@ -1,4 +1,5 @@
-                                          # AWS Serverless Messaging Application
+                                          ## AWS Serverless Messaging Application
+                                          
 Designed and developed a serverless web application that enables users to send email and SMS notifications using AWS services, including Lambda, API Gateway, Step Functions, Amazon SES, and Amazon SNS. The solution eliminates the need for traditional server management while providing a scalable, cost-effective, and highly available architecture for message delivery and workflow automation.
 
 Tools: 
@@ -23,8 +24,10 @@ Step-1: Create Lambda Role
 - SNS 
 - Step Functions 
 - Name and create the role.
+  
 
 <img width="1915" height="910" alt="Screenshot 2026-06-20 105642" src="https://github.com/user-attachments/assets/57f3d3cb-f265-4628-805f-6a043da55618" />
+
 
 Step-2: Connect Lambda to SES & SNS 
 
@@ -49,22 +52,27 @@ Step-3: Create Step Function Workflow
 - Conditional logic (email, SMS, or both) 
 - Invoke appropriate Lambda functions
 
-                                               # Step Function
+                                               ## Step Function
+  
   
   <img width="1917" height="887" alt="Screenshot 2026-06-20 114622" src="https://github.com/user-attachments/assets/0e76c324-23a0-4108-b0da-3bdb83993401" />
+  
 
 Step-4: Create REST API Handler 
 - Create Lambda Function 3: handler.py 
 - Accepts JSON input from frontend 
 - Starts Step Function execution
 
+
 <img width="1918" height="905" alt="Screenshot 2026-06-20 111504" src="https://github.com/user-attachments/assets/b33c0ff2-e682-4be2-ae94-1120ca318efc" />
+
 
 Step-5: Set Up API Gateway 
 - Go to API Gateway > Create API 
 - Create a REST API with /send endpoint 
 - Integrate with handler.py Lambda 
 - Enable CORS for frontend access
+
 
 <img width="1918" height="908" alt="Screenshot 2026-06-20 115010" src="https://github.com/user-attachments/assets/6cdd6a18-6b5c-4681-a5a6-4db54b192b58" />
 
@@ -75,20 +83,37 @@ Step-6: Upload Website to S3
 - Upload your files 
 - Enable Static Website Hosting 
 - Set permissions for public access
+  
 
 <img width="1918" height="1013" alt="Screenshot 2026-06-20 122905" src="https://github.com/user-attachments/assets/bf8edb70-c7ee-43b2-8b72-377e18a27197" />
 
+
 <img width="1915" height="888" alt="Screenshot 2026-06-20 115049" src="https://github.com/user-attachments/assets/f738b394-dd23-436b-a56d-af3b8fba2867" />
+
 
 <img width="1918" height="862" alt="Screenshot 2026-06-20 123411" src="https://github.com/user-attachments/assets/be3de294-99ea-44c6-92c3-9497ce9bdbdf" />
 
 
-OUTPUT: http://serverless-message-app.s3-website.ap-south-1.amazonaws.com 
+OUTPUT: 
+Important Note
+
+⚠️ Amazon SES Sandbox Limitation
+
+This project uses Amazon SES for email delivery. If your AWS account is operating in SES Sandbox Mode, emails can only be sent to and received by verified email addresses configured in Amazon SES.
+
+To test the email functionality:
+
+Verify the sender email address in Amazon SES.
+Verify the recipient email address in Amazon SES.
+Use the verified email addresses while testing the application.
+
+http://serverless-message-app.s3-website.ap-south-1.amazonaws.com 
+
 
 
 <img width="1912" height="895" alt="Screenshot 2026-06-20 111233" src="https://github.com/user-attachments/assets/a20e5436-3b09-41f5-9494-9c30bd5e60da" />
 
-Conclusion
+
 
 ## Conclusion
 
