@@ -1,4 +1,4 @@
-                                          ## AWS Serverless Messaging Application
+                                             AWS Serverless Messaging Application
                                           
 Designed and developed a serverless web application that enables users to send email and SMS notifications using AWS services, including Lambda, API Gateway, Step Functions, Amazon SES, and Amazon SNS. The solution eliminates the need for traditional server management while providing a scalable, cost-effective, and highly available architecture for message delivery and workflow automation.
 
